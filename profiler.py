@@ -30,7 +30,7 @@ class Profiler():
         self.profile[event_name] = {'avg time': avg_time, 'calls': n_calls}
         # implement max, min and sd of times
 
-    def show(self):
+    def summarise(self):
         print('\nTIME PROFILE:')
         for event in self.profile:
             print(f'\t{event}: {self.profile[event]}')
