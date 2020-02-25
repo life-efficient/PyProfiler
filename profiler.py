@@ -3,6 +3,7 @@ from time import time
 class Profiler():
     def __init__(self):
         self.profile = {}
+        self.start('TOTAL')
 
     def start(self, event_name):
         if event_name not in self.profile:
@@ -32,5 +33,6 @@ class Profiler():
 
     def summarise(self):
         print('\nTIME PROFILE:')
+        self.stop('TOTAL')
         for event in self.profile:
             print(f'\t{event}: {self.profile[event]}')
