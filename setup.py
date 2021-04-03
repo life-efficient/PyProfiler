@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='pyprofiler',
+    name='pyprofile',
     version='0.0.0',    
     description='A Python profiler that keeps things simple',
     url='https://github.com/life-efficient/PyProfiler',
