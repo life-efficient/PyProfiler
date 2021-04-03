@@ -29,7 +29,7 @@ class Profiler():
             prev_times = 0
         avg_time = round(  ( ((n_calls - 1) * prev_times) + new_time) / n_calls, 6)
         self.profile[event_name] = {'avg time': avg_time, 'calls': n_calls}
-        # implement max, min and sd of times
+        # TODO implement max, min and sd of times
 
     def summarise(self):
         print('\nTIME PROFILE:')
